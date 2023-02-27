@@ -1,4 +1,11 @@
-# Getting Started
+# Exercise in Java Spring
+Build an Api Endpoint to interact with your previously Command Line Application
+
+# Resources
+
+https://www.baeldung.com/spring-mvc-send-json-parameters
+https://www.baeldung.com/spring-boot-failed-to-configure-data-source
+
 
 ### Reference Documentation
 For further reference, please consider the following sections:
