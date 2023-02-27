@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: Works.trips.java.HospitalAPI.HospitalApiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.456 s <<< FAILURE! - in Works.trips.java.HospitalAPI.HospitalApiApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@17b016ac testClass = Works.trips.java.HospitalAPI.HospitalApiApplicationTests, locations = [], classes = [Works.trips.java.HospitalAPI.HospitalApiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@140c9f39, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3246fb96, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1eb5174b, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5f9b2141, org.springframework.boot.test.context.SpringBootTestAnnotation@a51c302e], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'controllerinit' method 
+Works.trips.java.HospitalAPI.Controller#findAllRecords()
+to {GET [/api/records]}: There is already 'controller' bean method
+Works.trips.java.HospitalAPI.Controller#findAllRecords() mapped.
+Caused by: java.lang.IllegalStateException: 
+Ambiguous mapping. Cannot map 'controllerinit' method 
+Works.trips.java.HospitalAPI.Controller#findAllRecords()
+to {GET [/api/records]}: There is already 'controller' bean method
+Works.trips.java.HospitalAPI.Controller#findAllRecords() mapped.
+

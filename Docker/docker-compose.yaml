@@ -1,0 +1,19 @@
+version: "3"
+services:
+  db:
+    image: mysql:latest
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    env_file:
+     - .env 
+        
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db
+    restart: always
+    ports:
+      - 8081:80
+volumes:
+  db_data:
